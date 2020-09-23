@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title>팝업 메뉴 포인트 확장 관리 애드온</title>
+    <description xml:lang="ko">기존의 닉네임 클릭시 출력되는 팝업 메뉴에 포인트 확장 관리 기능을 추가합니다.</description>
+    <version>2.0.1</version>
+    <date>2016-10-15</date>
+    <author email_address="hjhj3686@naver.com" link="https://github.com/hjhj3686">
+        <name xml:lang="ko">불금</name>
+    </author>
+	<extra_vars>
+		<group>
+		<title>일반 설정</title>
+		<var name="color">
+			<title xml:lang="ko">확장메뉴 색</title>
+			<description xml:lang="ko">확장메뉴의 색을 설정할수 있습니다. 색코드로 입력하세요 (기본값 : #526bbe)</description>
+		</var>
+		<var name="register_form">
+			<title xml:lang="ko">가입일 표시 포맷 설정</title>
+			<description xml:lang="ko">가입일을 어떻게 표시할지 정합니다.아무것도 적지않으면"Y-m-d"가 기본값입니다</description>
+		</var>
+		<var name="user_access" type="select">
+			<title xml:lang="ko">비관리자 유저 표시여부</title>
+			<description xml:lang="ko">관리자가 아닌 유저도 표시할지를 정할수 있습니다.</description>
+			<options value="N">
+				<title xml:lang="ko">아니요</title>
+			</options>
+			<options value="Y">
+				<title xml:lang="ko">예</title>
+			</options>
+		</var>
+                <var name="non_user_access" type="select">
+                        <title xml:lang="ko">비로그인 유저 표시여부</title>
+                        <description xml:lang="ko">비로그인 유저도 표시할지를 정할수 있습니다. 만약 관리자에게만 표시하게 한다면(위의 옵션) 본 기능은 작동하지 않습니다.</description>
+                        <options value="N">
+                                <title xml:lang="ko">아니요</title>
+                        </options>
+                        <options value="Y">
+                                <title xml:lang="ko">예</title>
+                        </options>
+                </var>
+		<var name="point" type="select">
+			<title xml:lang="ko">포인트 설정 메뉴 추가 여부</title>
+			<description xml:lang="ko">포인트 설정 메뉴 추가 여부. (관리자 전용)</description>
+			<options value="N">
+				<title xml:lang="ko">아니요</title>
+			</options>
+			<options value="Y">
+				<title xml:lang="ko">예</title>
+			</options>
+		</var>
+		</group>
+		<group>
+			<title xml:lang="ko">포인트 적립내용 표시 여부
+				<![CDATA[<hr /><span style="font-size:12px;">
+				Conory님의 포인트 히스토리 모듈이 설치되어 있을 경우<br />
+				적립내용 바로가기를 확장메뉴에 표시할수 있습니다.</span><br />
+				<br />
+				<span style="font-size:12px;color:red;">만약 설치되지 않은 경우 이 옵션을 활성화 하더라도 작동하지 않습니다.<br /><br /></span>]]>
+			</title>
+			<var name="pointhistory" type="select">
+				<title xml:lang="ko">포인트 적립내용 표시 여부</title>
+				<description xml:lang="ko">상위 설명 참조.</description>
+				<options value="N">
+					<title xml:lang="ko">아니요</title>
+				</options>
+				<options value="Y">
+					<title xml:lang="ko">예</title>
+				</options>
+			</var>
+		</group>
+	</extra_vars>
+</addon>
