@@ -3,7 +3,6 @@
 	
 	/**
 	* @file plus_manage_popupmenu.addon.php
-	* @author 불금 (nettermhell@gmail.com)
 	* @brief 팝업메뉴에 확장된 관리 메뉴를 넣습니다. https://www.xpressengine.com/tip/22925896 팁을 애드온화 한것입니다.
 	**/
 
